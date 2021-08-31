@@ -22,6 +22,11 @@ const Desc = styled.p`
 const Img = styled.img`
     width: 120px;
     margin: 10px 0;
+
+    @media only screen and (max-width: 480px){
+        margin: 20px 0;
+        width: 150px;
+    }
 `;
 
 const AddCart = styled.p`

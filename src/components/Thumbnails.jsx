@@ -9,6 +9,11 @@ const Container = styled.div`
     height: 100vh;
     display: flex;
     flex-direction: column;
+
+
+    @media only screen and (max-width: 480px){
+        width: 100%;
+    }
 `;
 
 

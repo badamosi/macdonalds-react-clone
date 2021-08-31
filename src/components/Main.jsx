@@ -8,6 +8,10 @@ const Container = styled.div`
     height: 100vh;
     background-color: chocolate;
     padding: 20px;
+
+    @media only screen and (max-width: 480px){
+        width: 100%;
+    }
 `;
 
 const Header = styled.div`
@@ -21,12 +25,20 @@ const Header = styled.div`
 
 const Logo = styled.img`
     width: 85px;
+
+    @media only screen and (max-width: 480px){
+        width: 50px;
+    }
 `;
 
 const Menu = styled.ul`
     list-style: none;
     text-decoration: none;
     color: white;
+
+    @media only screen and (max-width: 480px){
+        display:none;
+    }
 `;
 
 const MenuItem = styled.li`
@@ -49,15 +61,28 @@ const Body = styled.div`
     margin: 0 auto;
     height: 70vh;
     width: 80%;
+
+    @media only screen and (max-width: 480px){
+        width: 100%;
+        flex-direction: column;
+        text-align:center;
+    }
 `;
 
 const MainImg = styled.img`
     width: 300px;
+    @media only screen and (max-width: 480px){
+        width: 250px;
+    }
 `;
 
 const Wrapper = styled.div`
     width: 50%;
     /* padding: 10px; */
+
+    @media only screen and (max-width: 480px){
+        width: 100%;
+    }
 `;
 
 const Title = styled.h1`
@@ -66,6 +91,10 @@ const Title = styled.h1`
     letter-spacing: 2px;
     font-weight: bold;
     margin: 0 !important;
+
+    @media only screen and (max-width: 480px){
+        font-size: 50px;
+    }
 `;
 
 const Nutrition = styled.h3`
