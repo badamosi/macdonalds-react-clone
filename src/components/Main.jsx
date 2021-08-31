@@ -16,11 +16,11 @@ const Header = styled.div`
     display: flex;
     align-items:center;
     justify-content: space-between;
-    margin: 40px 0;
+    margin: 20px 0;
 `;
 
 const Logo = styled.img`
-    width: 100px;
+    width: 85px;
 `;
 
 const Menu = styled.ul`
@@ -33,7 +33,9 @@ const MenuItem = styled.li`
     display: inline-block;
     margin-right: 30px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: normal;
+
+
 `;
 
 const CartIcon = styled.img`
@@ -43,37 +45,36 @@ const CartIcon = styled.img`
 const Body = styled.div`
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    margin: 8% auto;
+    justify-content: space-around;
+    margin: 0 auto;
     height: 70vh;
     width: 80%;
-    /* background-color: blue; */
 `;
 
 const MainImg = styled.img`
-    width: 40%;
+    width: 300px;
 `;
 
 const Wrapper = styled.div`
     width: 50%;
-    padding: 10px;
+    /* padding: 10px; */
 `;
 
 const Title = styled.h1`
-    font-size: 75px;
+    font-size: 55px;
     color: orange;
     letter-spacing: 2px;
     font-weight: bold;
-    margin-top: 0 !important;
+    margin: 0 !important;
 `;
 
 const Nutrition = styled.h3`
-    font-size: 30px;
+    font-size: 20px;
     color: white;
 `;
 
 const SubTitle = styled.p`
-    font-size: 20px;
+    font-size: 16px;
     color: white;
 `;
 
@@ -83,7 +84,7 @@ const CartButton = styled.button`
     background-color: transparent;
     border: 2px solid white;
     border-radius: 30px;
-    font-size: 25px;
+    font-size: 15px;
 
 `;
 
@@ -102,7 +103,8 @@ function Main() {
                 <CartIcon />
             </Header>
             <Body>
-                <MainImg src={ImgMain} />
+                    <MainImg src={ImgMain} />
+                
                 <Wrapper>
                     <Title>Caramel <br />Mocha</Title>
                     <Nutrition>310 cal.</Nutrition>

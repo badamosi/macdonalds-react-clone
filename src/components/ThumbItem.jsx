@@ -11,7 +11,7 @@ const Container = styled.div`
 function ThumbItem({top}) {
     return (
         <Container top={top}>
-            Dummy
+             Work in progress
         </Container>
     )
 }
